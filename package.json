@@ -1,5 +1,6 @@
 {
-    "name": "vue3-boilerplate",
+    "name": "vuejs-chatroom",
+    "author": "Sean Magaud",
     "version": "0.0.0",
     "scripts": {
         "pretty": "yarn prettier --write .",
@@ -8,6 +9,7 @@
         "serve": "vite preview"
     },
     "dependencies": {
+        "firebase": "^8.5.0",
         "vue": "^3.0.5",
         "vue-router": "4"
     },

@@ -5,6 +5,9 @@
     h1 {
         @apply text-2xl;
     }
+    a.underline {
+        @apply no-underline shadow-link cursor-pointer;
+    }
 }
 @layer components {
     .btn-blue {
