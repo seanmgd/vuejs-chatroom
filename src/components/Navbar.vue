@@ -1,8 +1,11 @@
 <template>
-    <nav class="flex justify-center" v-if="user">
+    <nav
+        class="flex justify-between mb-5 bg-gray-800 p-5 rounded-lg"
+        v-if="user"
+    >
         <div>
-            <span> {{ user.displayName }} </span>
-            <span> {{ user.email }} </span>
+            <span>Logged with {{ user.email }} as </span>
+            <span class="underline">{{ user.displayName }}</span>
         </div>
         <button @click="handleClick">Log out</button>
     </nav>
@@ -19,9 +22,6 @@ export default {
 
         const handleClick = async () => {
             await logout()
-            if (!error.value) {
-                console.log('logout')
-            }
         }
         return { handleClick, user }
     },

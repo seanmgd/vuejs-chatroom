@@ -18,7 +18,6 @@ import SignupForm from '../components/SignupForm.vue'
 import LoginForm from '../components/LoginForm.vue'
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
-import { projectAuth } from '../firebase/config'
 
 export default {
     name: 'Welcome',
@@ -26,9 +25,6 @@ export default {
     setup() {
         const showLogin = ref(true)
         const router = useRouter()
-        if (projectAuth.currentUser) {
-            router.push({ name: 'Chatroom' })
-        }
 
         const enterChat = () => {
             router.push({ name: 'Chatroom' })

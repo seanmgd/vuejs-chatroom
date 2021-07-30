@@ -1,10 +1,11 @@
 <template>
     <form>
-        <textarea
-            placeholder="Ceci est un message eheheheh"
+        <input
+            placeholder="Write your message here and press enter"
             v-model="message"
+            class="w-full bg-gray-800 outline-none p-3 rounded-lg"
             @keypress.enter.prevent="handleSubmit"
-        ></textarea>
+        />
         <div class="text-center mb-3 text-red-400">{{ error }}</div>
     </form>
 </template>

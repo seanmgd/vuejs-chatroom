@@ -5,7 +5,7 @@
     h1 {
         @apply text-2xl;
     }
-    a.underline {
+    .underline {
         @apply no-underline shadow-link cursor-pointer;
     }
 }

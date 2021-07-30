@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container mx-auto w-1/2">
         <Navbar />
         <ChatWindow />
         <NewChatForm />
